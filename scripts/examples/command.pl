@@ -4,13 +4,7 @@
 
 use Irssi;
 use strict;
-use vars qw($VERSION %IRSSI);
-
-$VERSION = "1.00";
-%IRSSI = (
-    authors     => 'Timo Sirainen',
-    name        => 'command',
-    description => 'Command example',
+use vars qw($VERSION ',
     license     => 'Public Domain'
 );
 
