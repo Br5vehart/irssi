@@ -1,23 +1,4 @@
-# by Stefan "tommie" Tomanek
-#
-# scriptassist.pl
 
-
-use strict;
-
-our $VERSION = '2022053100';
-our %IRSSI = (
-    authors     => 'Stefan \'tommie\' Tomanek',
-    contact     => 'stefan@pico.ruhr.de',
-    name        => 'scriptassist',
-    description => 'keeps your scripts on the cutting edge',
-    license     => 'GPLv2',
-    url         => 'https://scripts.irssi.org/',
-    modules     => 'CPAN::Meta::YAML LWP::Protocol::https (GnuPG)',
-    commands	=> "scriptassist"
-);
-
-our ($forked, %remote_db, $have_gpg, @complist);
 
 use Irssi 20020324;
 use CPAN::Meta::YAML;
