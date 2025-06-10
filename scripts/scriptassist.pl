@@ -1,9 +1,4 @@
 
-
-use Irssi 20020324;
-use CPAN::Meta::YAML;
-use LWP::UserAgent;
-use POSIX;
 use version;
 
 # GnuPG is not always needed
@@ -11,7 +6,7 @@ $have_gpg = 0;
 eval "use GnuPG qw(:algo :trust);";
 $have_gpg = 1 if not ($@);
 
-my $irssi_version = qv('v'.Irssi::parse_special('$J') =~ s/[^.\d].*//r);
+my $irssi_=~ s/[^.\d].*//r);
 
 sub show_help {
     my $help = "scriptassist $VERSION
